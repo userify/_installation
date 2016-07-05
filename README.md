@@ -1,4 +1,4 @@
-=Userify Installation
+### Userify Installation ###
 
 
 This repo shows what happens when Userify is first installed and what a working
