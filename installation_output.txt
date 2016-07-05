@@ -1,0 +1,40 @@
+   
+                         _--_
+                        (    \
+                     --/      )
+                .-- /   \      \
+              ./   \            ) _  __
+             /_   _ ___  ___ _ __(_)/ _|_   _
+             | | | / __|/ _ \ '__| | |_  | | |
+             | |_| \__ \  __/ |  | |  _| |_| |
+              \__,_|___/\___|_|  |_|_|  \__, |
+                                        |___/  tm
+
+
+                Installing Userify now..                     
+-------------------------------------------------------------
+Tip: to understand how the shim works, read the source at
+https://github.com/userify/shim/
+
+Creating Userify directory (/opt/userify/)
+Creating uninstall script (/opt/userify/uninstall.sh)
+Creating API login config (/opt/userify/creds.py)
+Creating shim (/opt/userify/shim.{sh,py})
+Removing exit 0 from rc.local (if there)
+Checking Shim Startup
+Adding Linux Startup Script to /etc/rc.local
+Setting Permissions
+Launching shim.sh
+
+Finished. Userify shim has been completely installed.
+/opt/userify/uninstall.sh as root to uninstall.
+debug=1 is enabled in /opt/userify/userify_config.py for extra verbosity.
+Please review shim output in /var/log/userify-shim.log
+
+cat /var/log/userify-shim.log
+
+
+Thanks for using Userify!
+
+-------------------------------------------------------------
+

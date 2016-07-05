@@ -1,0 +1,52 @@
+# This is example output with DEBUG enabled in
+# userify_config.py.
+# The single user enabled here has had the "root"
+# permission selected in Userify (which provides
+# the "ALL=NOPASSWD: ALL" sudo string). Userify
+# does not use passwords where possible.
+
+# This displays the following log output:
+# first JSON dictionary: uploaded server metadata.
+# 200 OK displaying that the server accepted the
+# incoming connection.
+# second JSON dictionary: downloaded user data
+
+# this *** section will be repeated each time the shim
+# updates itself and the users on the system:
+
+#  every 300 seconds:          Userify Cloud Baseline (free)
+#  every 30 seconds:           Userify Cloud Pro (paid)
+#  every 10 seconds (default)  Userify On-Site Enterprise
+#  every 10 seconds (default)  Userify On-Site Pro
+
+# the file will be rotated when it gets too big (see shim.sh)
+
+******************************
+[shim] 04012016-1 start: Tue Jul  5 10:15:34 2016
+{'linux_distribution': ('debian', '8.5', ''),
+ 'machine': 'x86_64',
+ 'node': 'example.userify.com',
+ 'platform': 'Linux-3.2.0-4-amd64-x86_64-with-debian-8.5',
+ 'processor': '',
+ 'python_build': ('default', 'Mar  1 2015 12:57:24'),
+ 'python_version': '2.7.9',
+ 'release': '3.2.0-4-amd64',
+ 'server_rsa_public_key': 'ssh-rsa AAAAB3NzaCeWer root@example\n',
+ 'system': 'Linux',
+ 'uname': ('Linux',
+           'example.userify.com',
+           '3.2.0-4-amd64',
+           '#1 SMP Debian 3.2.73-2+deb7u2',
+           'x86_64',
+           ''),
+ 'version': '#1 SMP Debian 3.2.73-2+deb7u2'}
+200 OK
+'{"shim-delay": "1", "users": {"sample": {"ssh_public_key": "ssh-rsa AAAAB3NzaC1yc2EA8= sample@example", "name": "Example User", "perm": "ALL=NOPASSWD: ALL", "preferred_shell": "/bin/bash"}}}'
+{u'shim-delay': u'1',
+ u'users': {u'sample': {u'name': u'Example User',
+                          u'perm': u'ALL=NOPASSWD: ALL',
+                          u'preferred_shell': u'/bin/bash',
+                          u'ssh_public_key': u'ssh-rsa AAAAB3NzaC1yc2EAWDCvbXcbOVGQI38= sample@example'}}}
+[shim] elapsed: 1.345s
+******************************
+
