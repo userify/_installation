@@ -53,11 +53,16 @@ the Userify console will be instantly created, SSH keys created, and sudo
 rights granted (if applicable).
 
 
-+    [uninstall.sh](uninstall.sh)
-+    [opt/userify/shim.sh](opt/userify/shim.sh)
 +    [opt/userify/userify_config.py](opt/userify/userify_config.py)
 +    [opt/userify/creds.py](opt/userify/creds.py)
++    [opt/userify/shim.sh](opt/userify/shim.sh)
 +    [var/log/userify_shim.log](var/log/userify_shim.log)
++    [uninstall.sh](uninstall.sh)
+
+
+Depending on the type of system, /opt/userify/shim.sh will be set up to
+execute on boot using the least invasive way possible (many systems
+will just get a line appended  /etc/rc.local: /opt/userify/shim.sh &).
 
 
 That's all there is to it! More info available at the Userify shim
